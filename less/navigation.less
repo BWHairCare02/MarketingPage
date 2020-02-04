@@ -1,0 +1,48 @@
+//MY nav keeps coming from out of its border. 
+//whenever i switch pages the border becomes square
+//and then the words are out of the border.
+
+header{
+    width:100%;
+
+    .nav {
+        .display-flex(space-between, center);
+        width: 100%;
+        margin: 2% auto;
+
+
+        img{ 
+            width: 40%;
+            height: 15vh;
+            border: @border-3px-black;
+        }
+
+        nav{
+            .display-flex(space-around, center);
+            width: 90%;
+            margin: 0 auto;
+
+
+            a{
+                text-decoration: none;
+                font-size: 2rem;
+                color: @color-copper;
+                border: @border-3px-black;
+                padding: 2% 3%;
+                margin: 0 auto;
+
+                &:hover{
+                    background: @color-twilight;
+                    color: black;
+                    border-color: @color-copper;
+                }
+            }
+        }
+    }
+
+    img{
+        width:100%;
+        height: 10vh;
+        margin: 1% 0 1% 2%;
+    }
+}
