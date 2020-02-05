@@ -6,24 +6,31 @@ header{
         width: 100%;
         margin: 2% auto;
 
+        @media @mobile{
+            flex-direction: column;
+        }
+
 
         img{ 
             width: 40%;
             height: 15vh;
-            border: @border-3px-black;
+            border: @border-black;
         }
 
         nav{
             .display-flex(space-around, center);
             width: 90%;
             margin: 0 auto;
-
+            
+            @media @mobile{
+            flex-direction: column;
+        }
 
             a{
                 text-decoration: none;
                 font-size: 2rem;
                 color: @color-copper;
-                border: @border-3px-black;
+                border: @border-black;
                 padding: 15px 20px;
                 margin: 0 auto;
 
@@ -32,6 +39,17 @@ header{
                     color: black;
                     border-color: @color-copper;
                 }
+
+                @media @mobile{
+                    flex-direction: column;
+                    width:100%;
+                    text-align: center;
+                    border-right: none;
+                    border-left: none;
+                    margin: 2% auto;
+                    background: #F6EDF1;
+                }
+
             }
         }
     }
