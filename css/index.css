@@ -182,7 +182,7 @@ header .nav nav a {
   font-size: 2rem;
   color: #C37433;
   border: 3px double black;
-  padding: 2% 3%;
+  padding: 15px 20px;
   margin: 0 auto;
 }
 header .nav nav a:hover {
@@ -262,8 +262,9 @@ footer p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 3% auto;
   background-image: none;
+  border: 3px double black;
 }
 .home-page .content div img {
   display: inline-block;
